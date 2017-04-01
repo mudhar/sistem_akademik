@@ -129,6 +129,27 @@ class Mahasiswa{
 		}
 	}
 
+<<<<<<< HEAD
+=======
+//   // login
+// 	public function login_mahasiswa($username, $password)
+// 	{	$query = $this->db->prepare("SELECT `email`, `idprodi` FROM `mahasiswa` WHERE `email` = ?");
+// 		$query->bindValue(1, $username);
+// 		try{
+// 			$query->execute();
+// 			$data 				= $query->fetch();
+// 			$stored_password 	= $data['password'];
+// 			$id   				= $data['id'];
+// 			if($stored_password === sha1($password)){
+// 				return $id;
+// 			}else{
+// 				return false;
+// 			}
+// 		}catch(PDOException $e){
+// 			die($e->getMessage());
+// 		}
+// 	}
+>>>>>>> 3b3985d9bd33798bd9fc74fcdb11e6438359213b
 
   // mahasiswa data
 	public function mahasiswa_data($id)

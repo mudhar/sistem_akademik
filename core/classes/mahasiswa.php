@@ -25,7 +25,7 @@ class Mahasiswa{
 	}
 
   // cek double email
-	public function email_exists($email)
+	public function cek_email_exists_mahasiswa($email)
 	{	$query = $this->db->prepare("SELECT COUNT(`id`) FROM `mahasiswa` WHERE `email`= ?");
 		$query->bindValue(1, $email);
 		try{
@@ -76,7 +76,7 @@ class Mahasiswa{
 	}
 
   // delete mahasiswa
-	public function delete($id){
+	public function delete_mahasiswa($id){
 		$sql="DELETE FROM `mahasiswa` WHERE `idmahasiswa` = ?";
 		$query = $this->db->prepare($sql);
 		$query->bindValue(1, $id);

@@ -1,4 +1,5 @@
 <?php
+// kelas mahasiswa
 class Mahasiswa{
 	private $db;
 	public function __construct($database)
